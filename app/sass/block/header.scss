@@ -4,6 +4,7 @@
 }
 
 .header__title {
+    padding: 12px 0;
     font-size: 28px;
     font-weight: bold;
     line-height: 32px;
@@ -15,7 +16,8 @@
     font-size: 18px;
     line-height: 24px;
     color: $grey;
-    @media screen and ( max-width: 375px ) {
-        display: none;
+    @media screen and ( max-width: 480px ) {
+        font-size: 14px;
+        line-height: 20px;
     }  
 }
