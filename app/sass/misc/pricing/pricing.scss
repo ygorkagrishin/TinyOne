@@ -1,6 +1,9 @@
 .pricing__list {
     display: flex;
     justify-content: center;
+    @media screen and ( max-width: 480px ) {
+        flex-wrap: wrap;
+    }
 }
 
 .no-flexbox .pricing-list__item {
@@ -11,7 +14,30 @@
 .pricing-list__item {
     max-width: 250px;
     padding: 0 3%;
+    margin-bottom: 32px;
     text-align: center;
+    @media screen and ( max-width: 480px ) {
+        max-width: 70%;
+    }
+}
+
+.pricing-list__item {
+    @media screen and ( max-width: 375px ) {
+        max-width: 90%;
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+}
+
+.pricing-list__item {
+    @media screen and ( max-width: 375px ) {
+        & > div {
+            float: left;
+        }
+    }
 }
 
 .pricing-item__icon {
@@ -19,12 +45,28 @@
     margin: auto;
     border-radius: 50%;
     background-color: #ebebeb;
+    
+    @media screen and ( max-width: 375px ) {
+        width: 70px; height: 70px;
+    }
 }
 
 .pricing-item__icon {
     & > i {
         font-size: 48px;
         line-height: 100px;
+        @media screen and ( max-width: 375px ) {
+            font-size: 32px;
+            line-height: 70px;
+        }
+    }
+}
+
+.pricing-item__cont {
+    @media screen and ( max-width: 375px ) {
+        width: 70%;
+        padding: 0 16px;
+        text-align: left;
     }
 }
 
@@ -32,6 +74,9 @@
     padding: 16px 0;
     font-size: 20px;
     font-weight: bold;
+    @media screen and ( max-width: 375px ) {
+        padding: 0 0 12px 0;
+    }
 }
 
 .pricing-item__body {
@@ -39,10 +84,16 @@
     font-size: 14px;
     line-height: 24px;
     color: $grey;
+    @media screen and ( max-width: 375px ) {
+        margin-bottom: 12px;
+    }
 }
 
 .price-item__wrap-price {
     margin-bottom: 32px;
+    @media screen and ( max-width: 375px ) {
+        margin-bottom: 26px;
+    }
 }
 
 .pricing-item__pric {
@@ -59,6 +110,9 @@
         height: 2px;
         margin: 8px auto;
         background-color: $black;
+        @media screen and ( max-width: 375px ) {
+            margin: 8px 0;
+        }
     }
 }
 
@@ -79,4 +133,7 @@
     font-weight: bold;
     text-transform: uppercase;
     white-space: nowrap;
+    @media screen and ( max-width: 375px ) {
+        text-align: center;
+    }
 }
