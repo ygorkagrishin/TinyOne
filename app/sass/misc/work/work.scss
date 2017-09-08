@@ -1,0 +1,33 @@
+.work__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-list__item {
+    max-width: 220px;
+    @media screen and ( max-width: 768px ) {
+        max-width: 45%;
+    }
+}
+
+.work-item__cont {
+    text-align: center;
+}
+
+.work-item__image {
+    position: relative;
+}
+.work-image__pic {
+    width: 100%;
+}
+.work-image__icon {
+    position: absolute;
+    bottom: 12px;
+}
+.work-image__see {
+    left: 12px;
+}
+.work-image__date {
+    right: 12px;
+}
