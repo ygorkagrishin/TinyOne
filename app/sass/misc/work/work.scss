@@ -2,12 +2,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
+    @media screen and ( max-width: 768px ) {
+        justify-content: space-around;
+    }
 }
 
 .work-list__item {
-    max-width: 220px;
+    width: 220px;
+    margin-bottom: 32px;
     @media screen and ( max-width: 768px ) {
-        max-width: 45%;
+        width: 45%;
+    }
+    @media screen and ( max-width: 375px ) {
+        width: 65%;
     }
 }
 
@@ -24,10 +32,24 @@
 .work-image__icon {
     position: absolute;
     bottom: 12px;
+    font-size: 14px;
+    & span, i {
+        color: #fff;
+    }
 }
 .work-image__see {
     left: 12px;
 }
 .work-image__date {
     right: 12px;
+}
+
+.work-cont__title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.work-cont__body {
+    font-size: 14px;
+    color: $grey;
 }
