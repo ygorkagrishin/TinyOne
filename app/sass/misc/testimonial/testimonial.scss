@@ -38,6 +38,9 @@
     margin: auto;
     text-align: center;
     overflow-x: hidden;
+    @media screen and ( max-width: 480px ) {
+        max-width: 320px;
+    } 
 }
 
 .test-item__count {
@@ -53,7 +56,10 @@
 
 .test-carousel__slide {
     width: 540px;
-}
+    @media screen and ( max-width: 480px ) {
+        width: 320px;
+    }
+ }
 
 .test-carousel__slide {
     position: relative;
@@ -65,7 +71,7 @@
 
 .test-image__wrap {
     border-radius: 50%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .test-image__pic {
@@ -78,6 +84,9 @@
 
 .test-header__title {
     font-size: 24px;
+    @media screen and ( max-width: 480px ) {
+        font-size: 20px;
+    }
 }
 
 .test-header__subtitle {
@@ -88,6 +97,9 @@
 .test-slide__cont {
     font-size: 20px;
     color: $grey;
+    @media screen and ( max-width: 480px ) {
+        font-size: 16px;
+    }
 }
 
 .test-slide__quo {
@@ -95,6 +107,9 @@
     bottom: 0; 
     & > i {
         color: $grey;
+    }
+    @media screen and ( max-width: 480px ) {
+        display: none;
     }
 }
 
