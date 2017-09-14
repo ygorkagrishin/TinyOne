@@ -30,8 +30,11 @@ html, body {
 .container {
     width: 95%; max-width: 58.75rem;
     min-height: 100%;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     margin: auto;
+    @media screen and ( max-width: 480px ) {
+        padding: 2rem 0;
+    }
 }
 
 .wrap__cont {

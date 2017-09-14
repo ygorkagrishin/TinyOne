@@ -17,6 +17,50 @@ if ( section.children[0].offsetHeight >= window.innerHeight ) {
 document.addEventListener( 'DOMContentLoaded', fullHeight );
 window.addEventListener( 'resize', fullHeight );
 
+var menu = ( function () {
+
+var iconContainer = document.querySelector( '.hero-header__menu' ),
+    icon = document.querySelector( '.hero-header__menu .fa-bars' ),
+    closes = document.querySelector( '.hero-header__menu .fa-times' ),    
+    menu = document.querySelector( '.hero__slide-menu' ),
+    cont = document.querySelector( '.hero-slide__list' ); 
+
+window.addEventListener( 'click', function (event) {
+var target = event.target,
+    width = cont.offsetWidth + 'px';
+
+if ( target.classList.contains( 'fa-bars' ) ) {
+
+    menu.style.width = width;
+    icon.style.display = 'none';
+    closes.style.display = 'inline-block';
+
+} else {
+
+    menu.style.width = null;
+    closes.style.display = 'none';
+    icon.style.display = 'inline-block';
+
+    }
+
+});
+
+
+})();
+
+var scroll = ( function () {
+
+var arrow = document.querySelector( '.hero__arrow .fa' );
+var para = document.querySelector( '.hero' ).offsetHeight;
+
+arrow.addEventListener( 'click', function () {
+
+    window.scrollTo( 0, para );
+    
+    });
+
+})();
+
 var carousel = ( function () {
 
 var carousel = document.querySelector( '.test__carousel' ),
