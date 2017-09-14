@@ -10,8 +10,8 @@
 }
 
 .feature-list__item {
-    max-width: 300px;
-    margin-bottom: 80px;
+    max-width: 18.75rem;
+    margin-bottom: 5rem;
 }
 
 .feature-list__item {
@@ -32,7 +32,7 @@
     width: 30%;
     text-align: center;
     & > i {
-        font-size: 50px;
+        font-size: 3.125rem;
     }
 }
 
@@ -41,13 +41,13 @@
 }
 
 .feature-item__title {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
 }
 
 .feature-item__body {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: .875rem;
+    line-height: 1.25rem;
     color: $grey;
 }
 

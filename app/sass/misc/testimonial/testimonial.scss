@@ -8,8 +8,8 @@
 }
 
 .test-list__item {
-    width: 140px;
-    margin-bottom: 32px;
+    width: 8.75rem;
+    margin-bottom: 2rem;
     @media screen and ( max-width: 480px ) {
         width: 41%;
     }
@@ -17,34 +17,32 @@
 
 .test-item__icn {
     .fa {
-        font-size: 48px;
-        @media screen and ( max-width: 480px ) {
-            font-size: 32px;
-        }
+        font-size: 3rem;
     }
 }
 
 .test-item__counter {
+    padding: .3rem 0;
    .test-counter__counter {
-       font-size: 24px;
+       font-size: 1.5rem;
        @media screen and ( max-width: 480px ) {
-           font-size: 18px;
+           font-size: 1.125rem;
        }
    } 
 }
 
 .test__carousel {
-    max-width: 540px;
+    max-width: 33.75rem;
     margin: auto;
     text-align: center;
     overflow-x: hidden;
     @media screen and ( max-width: 480px ) {
-        max-width: 320px;
+        max-width: 20rem;
     } 
 }
 
 .test-item__count {
-    font-size: 14px;
+    font-size: .875rem;
     color: $grey;
 }
 
@@ -55,9 +53,9 @@
 }
 
 .test-carousel__slide {
-    width: 540px;
+    width: 33.75rem;
     @media screen and ( max-width: 480px ) {
-        width: 320px;
+        width: 20rem;
     }
  }
 
@@ -79,7 +77,7 @@
 }
 
 .test-slide__header {
-    margin: 16px 0;
+    margin: 1rem 0;
 }
 
 .test-header__title {
@@ -90,15 +88,15 @@
 }
 
 .test-header__subtitle {
-    font-size: 14px;
+    font-size: .875rem;
     color: $grey;
 }
 
 .test-slide__cont {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: $grey;
     @media screen and ( max-width: 480px ) {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 

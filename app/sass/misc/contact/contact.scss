@@ -11,7 +11,7 @@
 }
 
 .cont__list {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .no-flexbox .cont__list {
@@ -23,8 +23,8 @@
 }
 
 .cont-list__item {
-    max-width: 220px;
-    padding: 0 32px;
+    max-width: 13.75rem;
+    padding: 0 2rem;
     @media screen and ( max-width: 480px ) {
         max-width: 100%;
         &:after {
@@ -45,13 +45,13 @@
 }
 
 .cont-item__icon {
-    padding: 16px 0;
+    padding: 1rem 0;
     @media screen and ( max-width: 480px ) {
         width: 10%;
         padding: 0 0 3% 0;
     }
     & > i {
-        font-size: 22px;
+        font-size: 2rem;
     }
 }
 
@@ -64,16 +64,16 @@
 }
 
 .cont-cont__title {
-    font-size: 22px;
-    line-height: 28px;
+    font-size: 1.375rem;
+    line-height: 1.75rem;
     @media screen and ( max-width: 480px ) {
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 1.125rem;
+        line-height: 1.25rem;
     }
 }
 
 .cont-cont__body {
-    font-size: 14px;
+    font-size: .875rem;
     color: $grey;
 }
 
@@ -90,21 +90,21 @@
 
 .form__wrap {
     &:not(:last-child) {
-        margin-bottom: 26px;
+        margin-bottom: 1.625rem;
     }
 }        
 
 .form__pole {
     display: inline-block;
     width: 100%;
-    padding: 16px 12px;
-    border: 2px solid $black;
+    padding: 1rem .75rem;
+    border: .125rem solid $black;
     outline-color: $black;
 }
 
 .form__send-button {
     display: inline-block;
-    padding: 19px 32px 16px 32px;
+    padding: 1.125rem 2rem 1rem 2rem;
     border: none;
     font-weight: bold;
     text-transform: uppercase;

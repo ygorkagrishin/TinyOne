@@ -6,7 +6,7 @@
     }
 
     .wrap__cont {
-        min-height: 450px;
+        min-height: 28.125rem;
     }
 }
 .footer__form {
@@ -23,12 +23,12 @@
 }
 .footer-form__pole {
     flex: 2;
-    padding: 16px;
-    margin-right: 5px;
+    padding: 1rem;
+    margin-right: .3125rem;
     border: none;
 }
 .footer-form__sub-btn {
-    padding: 16px 32px;
+    padding: 1rem 2rem;
     border: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -49,7 +49,7 @@
 }
 .footer-cont__list {
     flex-basis: 25%;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .footer-cont__address {
@@ -66,7 +66,7 @@
         color: #fff;
     }
     @media screen and ( max-width: 480px ) {
-        font-size: 14px;
+        font-size: .875rem;
     }
 }
 .footer-cont__address {

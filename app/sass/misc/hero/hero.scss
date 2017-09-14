@@ -25,7 +25,7 @@
 
 .logo__banner {
     display: inline-block;
-    margin-left: 8px;
+    margin-left: .5rem;
     vertical-align: middle;
     font-weight: bold;
 }
@@ -33,42 +33,35 @@
 .hero-social__link {
     display: inline-block;
     &:not(:last-child) {
-        margin-right: 16px;
+        margin-right: 1rem;
     }
 }
 
 .hero__cont {
-    max-width: 550px;
+    max-width: 34.375rem;
     text-align: center;
     @media screen and ( max-width: 480px ) {
-        max-width: 390px;
+        max-width: 24.375rem;
     }
 }
 
 .hero-cont__header {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: bold;
-    line-height: 72px;
+    line-height: 4.5rem;
     @media screen and ( max-width: 480px ) {
         margin-bottom: 3%;
-        font-size: 32px;
-        line-height: 32px;
-    }
-    @media screen and ( max-width: 345px ) {
-        font-size: 26px;
+        font-size: 2rem;
+        line-height: 2rem;
     }
 }
 
 .hero-cont__body {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
     @media screen and ( max-width: 480px ) {
-        font-size: 16px;
-        line-height: 20px;
-    }
-    @media screen and ( max-width: 345px ) {
-        font-size: 13px;
-        line-height: 16px;
+        font-size: 1rem;
+        line-height: 1.25rem;
     }
 }
 
@@ -78,19 +71,19 @@
 
 .hero-start__btn {
     display: inline-block;
-    padding: 14px 68px;
+    padding: .875rem 4.25rem;
     border: 2px solid $black;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     text-transform: uppercase;
     @media screen and ( max-width: 375px ) {
-        padding: 12px 48px;
-        font-size: 18px;
+        padding: .75rem 3rem;
+        font-size: 1.125rem;
     }
 }
 
 .hero__arrow {
     & > i {
-        font-size: 32px;
+        font-size: 2rem;
     }
 }

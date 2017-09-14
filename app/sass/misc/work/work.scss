@@ -9,8 +9,8 @@
 }
 
 .work-list__item {
-    width: 220px;
-    margin-bottom: 32px;
+    width: 13.75rem;
+    margin-bottom: 2rem;
     cursor: pointer;
     @media screen and ( max-width: 768px ) {
         width: 45%;
@@ -32,25 +32,26 @@
 }
 .work-image__icon {
     position: absolute;
-    bottom: 12px;
-    font-size: 14px;
+    bottom: .75rem;
+    font-size: .875rem;
     & span, i {
         color: #fff;
     }
 }
 .work-image__see {
-    left: 12px;
+    left: .75rem;
 }
 .work-image__date {
-    right: 12px;
+    right: .75rem;
 }
 
 .work-cont__title {
-    font-size: 18px;
+    padding: .125rem 0;
+    font-size: 1.125rem;
     font-weight: bold;
 }
 
 .work-cont__body {
-    font-size: 14px;
+    font-size: .875rem;
     color: $grey;
 }
