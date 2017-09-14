@@ -28,9 +28,9 @@ window.addEventListener( 'click', function ( event ) {
 var target = event.target;
 
 if ( target.classList.contains( 'fa-bars' ) ) {
-    menu.style.width = cont.offsetWidth + 'px';
+    menu.classList.add( 'active' );
 } else if ( target.classList.contains( 'fa-times' ) ) {
-    menu.style.width = null;
+    menu.classList.remove( 'active' );
 }
 
 });    
