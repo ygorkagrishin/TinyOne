@@ -1,14 +1,13 @@
 var gulp = require( 'gulp' );
-var sass = require( 'gulp-sass' );
-var vender = require( 'gulp-autoprefixer' );
-var cleancss = require( 'gulp-clean-css' );
-var sourcemaps = require( 'gulp-sourcemaps' );
-var rename = require( 'gulp-rename' );
-var plumber = require( 'gulp-plumber' );
-var rigger = require( 'gulp-rigger' );
-var watch = require( 'gulp-watch' );
+    sass = require( 'gulp-sass' ),
+    vender = require( 'gulp-autoprefixer' ),
+    cleancss = require( 'gulp-clean-css' ),
+    sourcemaps = require( 'gulp-sourcemaps' ),
+    rename = require( 'gulp-rename' ),
+    plumber = require( 'gulp-plumber' ),
+    rigger = require( 'gulp-rigger' );
 
-gulp.task( 'sass', function () {
+function styles() {
 
 return gulp.src( 'app/sass/*.scss' )
            .pipe( sourcemaps.init() )
@@ -25,32 +24,21 @@ return gulp.src( 'app/sass/*.scss' )
            .pipe( sourcemaps.write() )
            .pipe( gulp.dest( 'dist/css/' ) );
 
-});
+};    
 
-gulp.task( 'rigger', function () {
+function htmlbuild() {
 
 return gulp.src( 'app/*.html' )
            .pipe( rigger() )
            .pipe( gulp.dest( 'dist/' ) );   
 
-});
+};
 
-gulp.task( 'watch', function () {
+function watch() {
+    gulp.watch( 'app/sass/**/*.scss', styles );
+    gulp.watch( 'app/**/*.html', htmlbuild );
+};
 
-    watch( 'app/sass/**/*.scss', function () {
-
-        setTimeout( function () {
-
-            gulp.start( 'sass' );
-
-        }, 500);
-
-    });
-
-    watch( 'app/**/*.html', function () {
-
-        gulp.start( 'rigger' );
-
-    });
-
-});
+exports.styles = styles;
+exports.htmlbuild = htmlbuild;
+exports.watch = watch;
