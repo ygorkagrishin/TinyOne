@@ -815,7 +815,7 @@
                     </div>    
                 </li>
             </ul>
-            <form id="form__field" class="cont__form">
+            <form id="form__field" class="cont__form" action="../server.php" method="post">
                 <div class="form__wrap">
                     <label for="emil"></label>
                     <input type="text" name="user-email" id="emil" placeholder="Email" class="form__pole">
@@ -852,8 +852,8 @@
                     quis venenatis.
                 </div>
             </header>
-            <form class="footer__form">
-                <input type="text" placeholder="Enter your email to update" class="footer-form__pole">
+            <form class="footer__form" action="../news.php" method="post" id="cont__field">
+                <input type="text" name="user-email" placeholder="Enter your email to update" class="footer-form__pole">
                 <button type="submit" class="footer-form__sub-btn">
                     Submit
                 </button>
@@ -927,7 +927,8 @@
 <!-- Footer -->
 
 <script src="js/jquery.min.js"></script>
-<script src="js/common.js"></script>
 <script src="js/jQuery.js"></script>
+<script src="js/common.js"></script>
+<script src="js/ajax.js"></script>
 </body>
 </html>
