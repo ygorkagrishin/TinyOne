@@ -29,7 +29,8 @@ var target = event.target;
 
 if ( target.classList.contains( 'fa-bars' ) ) {
     menu.classList.add( 'active' );
-} else if ( target.classList.contains( 'fa-times' ) ) {
+} else if ( target.classList.contains( 'fa-times' ) ||
+            target.classList.contains( 'hero-item__link' ) ) {
     menu.classList.remove( 'active' );
 }
 
@@ -67,3 +68,4 @@ var intevalID = setInterval( function () {
 },interval);
 
 })();
+

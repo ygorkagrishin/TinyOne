@@ -19,8 +19,9 @@
 }
 
 .hero__slide-menu.active {
-    width: 20rem;
     left: 0;
+    width: 20rem;
+    z-index: 9999;
     @media screen and ( max-width: 480px ) {
         width: 100%;
         text-align: center;
