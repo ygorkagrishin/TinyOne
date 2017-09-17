@@ -48,19 +48,19 @@
         flex-wrap: wrap;
     }
 }
+
 .footer-cont__list {
-    flex-basis: 25%;
     margin-bottom: 1rem;
 }
 
 .footer-cont__address {
-    flex-basis: 50%;
     @media screen and ( max-width: 480px ) {
-        flex-basis: 100%; 
+        flex-basis: 100%;
     }
 }
 
-.footer-list__item {
+.footer-item__address,
+.footer-item__link {
     color: rgba(#fff,.5);
     cursor: pointer;
     &:hover {
@@ -69,8 +69,5 @@
     @media screen and ( max-width: 480px ) {
         font-size: .875rem;
     }
-}
-.footer-cont__address {
-    width: 15%;
 }
 
