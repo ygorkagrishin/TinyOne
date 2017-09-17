@@ -5,7 +5,25 @@ var gulp = require( 'gulp' );
     sourcemaps = require( 'gulp-sourcemaps' ),
     rename = require( 'gulp-rename' ),
     plumber = require( 'gulp-plumber' ),
-    rigger = require( 'gulp-rigger' );
+    rigger = require( 'gulp-rigger' ),
+    uglify = require( 'gulp-uglify' ),
+    concat = require( 'gulp-concat' );
+
+function script() {
+return gulp.src( 'app/js/jScript/*.js' )
+           .pipe( concat( 'common.js' ) )
+           .pipe( uglify() )
+           .pipe( rename({ suffix : '.min' }) )
+           .pipe( gulp.dest( 'dist/js/' ) )
+}
+
+function jquery() {
+    return gulp.src( 'app/js/jquery/*.js' )
+               .pipe( concat( 'jQuery.js' ) )
+               .pipe( uglify() )
+               .pipe( rename({ suffix : '.min' }) )
+               .pipe( gulp.dest( 'dist/js/' ) )
+}
 
 function styles() {
 
@@ -37,8 +55,12 @@ return gulp.src( 'app/*.html' )
 function watch() {
     gulp.watch( 'app/sass/**/*.scss', styles );
     gulp.watch( 'app/**/*.html', htmlbuild );
+    gulp.watch( 'app/js/jScript/*.js', script );
+    gulp.watch( 'app/js/jquery/*.js', jquery );
 };
 
 exports.styles = styles;
 exports.htmlbuild = htmlbuild;
+exports.script = script;
+exports.jquery = jquery;
 exports.watch = watch;
