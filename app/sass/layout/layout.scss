@@ -15,6 +15,7 @@ html, body {
 }
 
 .section {
+    display: flex;
     height: 100%;
     min-height: 40.625rem;
     @media screen and ( max-width: 480px ) {
@@ -47,15 +48,6 @@ html, body {
     min-height: 40.625rem;
 }
 
-.no-flexbox .container {
-    display: table;
-}
-
-.no-flexbox .wrap__cont {
-    display: table-cell;
-    vertical-align: middle;
-}
-
 ul {
 margin: 0;
 padding: 0;
@@ -77,4 +69,5 @@ h6 {
 
 a {
     text-decoration: none;
+    color: $black;
 }

@@ -47,12 +47,21 @@
 }
 
 .test-carousel__wrap {
-    display: inline-flex;
     will-change: transform; 
     transition: all .7s;
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
 }
 
+.test-carousel__wrap.active {
+    transition: all .7s;
+}    
+
 .test-carousel__slide {
+    float: left;
     width: 33.75rem;
     @media screen and ( max-width: 480px ) {
         width: 20rem;
@@ -81,9 +90,9 @@
 }
 
 .test-header__title {
-    font-size: 24px;
+    font-size: 1.5rem;
     @media screen and ( max-width: 480px ) {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
