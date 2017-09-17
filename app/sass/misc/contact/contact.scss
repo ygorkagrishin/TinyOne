@@ -14,14 +14,6 @@
     margin-bottom: 2rem;
 }
 
-.no-flexbox .cont__list {
-    display: inline-block;
-    vertical-align: top;
-    @media screen and ( max-width: 480px ) {
-        display: block;
-    }
-}
-
 .cont-list__item {
     max-width: 13.75rem;
     padding: 0 2rem;
